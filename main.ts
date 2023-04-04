@@ -6,7 +6,7 @@ serve(async (request) => {
   const url = new URL(request.url);
 
   if (url.pathname === "/") {
-    return new Response(await Deno.readTextFile("./Readme.md"), {
+    return new Response("ray test", {
       headers: {
         "content-type": "text/plain;charset=UTF-8",
       },
